@@ -1,0 +1,34 @@
+div {
+  display: inline-block;
+}
+button {
+  color: #fff;
+  background-color: blue;
+  border-radius: 3px;
+  border: 0;
+  margin-right: 30px;
+}
+.radius button {
+  border-radius: 100px;
+}
+div > button:first-child {
+  padding: 10px;
+}
+div > button:nth-child(2) {
+  padding: 10px 20px;
+}
+div > button:nth-child(3) {
+  padding: 10px 50px;
+}
+
+.blue {
+  background-color: #2563eb;
+  color: #fff;
+}
+.green {
+  background-color: #22c55e;
+  color: #fff;
+}
+.pill {
+  border: 0;
+}

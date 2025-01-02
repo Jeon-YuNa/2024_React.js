@@ -1,0 +1,91 @@
+body {
+  width: 1200px;
+  margin: 0 auto;
+}
+body > div {
+  margin: 0 auto;
+  width: fit-content;
+}
+/* .button button {
+  background-color: red;
+  display: inline;
+  margin-right: 100px;
+  border-radius: 100px;
+  border: 0;
+  color: #fff;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  width: 80px;
+}
+.button button:nth-child(2) {
+  width: 100px;
+}
+.button button:nth-child(3) {
+  width: 200px;
+}
+.login {
+  border-right: 3px solid gray;
+  padding: 0 20px;
+}
+.login button {
+  width: 200px;
+  height: 40px;
+  border-radius: 50px;
+  border: 1px solid #000;
+  display: block;
+  margin-top: 20px;
+  font-weight: 700;
+}
+.login button:first-child {
+  background-color: #000;
+  color: #fff;
+} */
+.kakao button {
+  width: 400px;
+  height: 40px;
+  background-color: yellow;
+  font-weight: 700;
+  line-height: 40px;
+  margin-top: 40px;
+  border: 0;
+  border: 10px;
+}
+.coupon button {
+  border-radius: 3px;
+  border: 1px solid gray;
+  font-weight: 700;
+  width: fit-content;
+  display: block;
+  background-color: #fff;
+  margin: 10px auto 0;
+}
+
+/* .button button {
+  background-color: red;
+  color: #fff;
+  border-radius: 15px;
+  padding: 7px 10px;
+  border: 0;
+}
+.button button:nth-child(2) {
+  padding: 10px 30px;
+}
+.button button:nth-child(3) {
+  padding: 12px 100px;
+}
+
+.login button {
+  border-radius: 15px;
+  padding: 12px 100px;
+  font-weight: 700;
+}
+.login button:first-child {
+  background-color: #000;
+  color: #fff;
+  border: 0;
+}
+.login button:nth-child(2) {
+  background-color: #fff;
+  border: 1px solid #000;
+} */
