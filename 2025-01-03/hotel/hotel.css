@@ -1,0 +1,49 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.card {
+  width: 300px;
+  height: 400px;
+  border-radius: 10px;
+  background-size: cover;
+  background-position: center;
+  display: inline-block;
+  margin-right: 20px;
+  margin-bottom: 20px;
+  padding: 20px;
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.1);
+}
+.card > * {
+  color: #fff;
+  display: block;
+  margin-bottom: 10px;
+}
+.card-1 {
+  background-image: url("hotel-7540353_1280.jpg");
+}
+.card-2 {
+  background-image: url("water-3292794_1280.jpg");
+  background-position: left;
+}
+.card-3 {
+  background-image: url("breakfast-5204352_1280.jpg");
+}
+.card-4 {
+  background-image: url("windows-7509369_1280.jpg");
+}
+.card span {
+  display: inline-block;
+  font-size: 14px;
+  position: relative;
+  text-decoration: underline;
+  text-underline-offset: 5px;
+  padding-bottom: 3px;
+}
+.card strong {
+  font-size: 20px;
+}
+.card p {
+  font-size: 15px;
+}

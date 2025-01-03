@@ -1,0 +1,48 @@
+.busan {
+  width: fit-content;
+}
+.busan img {
+  width: 300px;
+  height: 300px;
+  border-radius: 10px;
+}
+.busan p {
+  margin-top: 10px;
+  font-weight: 700;
+  font-size: 20px;
+}
+.pizza {
+  border-radius: 10px;
+  background-color: #e7e7e7;
+  overflow: hidden;
+  width: fit-content;
+}
+.pizza img {
+  width: 300px;
+  height: 200px;
+  object-fit: cover;
+}
+.pizza .desc {
+  padding: 40px 0;
+}
+.pizza p {
+  text-align: center;
+  font-weight: 700;
+  font-size: 20px;
+}
+.pizza .desc span {
+  display: inline-block;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background-color: yellow;
+  margin-right: 5px;
+  vertical-align: middle;
+  text-align: center;
+  font-size: 15px;
+  line-height: 25px;
+}
+.pizza .desc strong {
+  font-size: 20px;
+  margin-right: 10px;
+}

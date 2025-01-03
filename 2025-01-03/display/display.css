@@ -1,0 +1,13 @@
+.block {
+  background-color: red;
+}
+.inline {
+  background-color: blue;
+}
+.card {
+  display: none;
+  width: 100px;
+  height: 100px;
+  background-color: green;
+  border: 3px solid #fff;
+}

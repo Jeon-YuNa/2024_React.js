@@ -1,0 +1,96 @@
+.container {
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  flex-direction: column;
+}
+.container > div {
+  /* 부모가 flex면 사이좋게 형제끼리 나눠가짐 */
+  width: 100%;
+  height: 100%;
+}
+.mint {
+  background-color: aquamarine;
+}
+.sky {
+  background-color: aqua;
+}
+.blue {
+  background-color: blue;
+}
+.purple {
+  background-color: blueviolet;
+}
+.gray {
+  background-color: rgb(197, 197, 197);
+}
+.wrap {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100vw;
+  height: 100vh;
+}
+.wrap .box {
+  width: 20%;
+  height: 25%;
+}
+.wrap .box:nth-child(1) {
+  background-color: #ffcdcd;
+}
+.wrap .box:nth-child(2) {
+  background-color: #ffe1cd;
+}
+.wrap .box:nth-child(3) {
+  background-color: #fffccd;
+}
+.wrap .box:nth-child(4) {
+  background-color: #ecffcd;
+}
+.wrap .box:nth-child(5) {
+  background-color: #cdfffd;
+}
+.wrap .box:nth-child(6) {
+  background-color: #cde1ff;
+}
+.wrap .box:nth-child(7) {
+  background-color: #dccdff;
+}
+.wrap .box:nth-child(8) {
+  background-color: #f7cdff;
+}
+.wrap .box:nth-child(9) {
+  background-color: #ffcde4;
+}
+.wrap .box:nth-child(10) {
+  background-color: #ffcdcd;
+}
+.wrap .box:nth-child(11) {
+  background-color: #fff3cd;
+}
+.wrap .box:nth-child(12) {
+  background-color: #d3ffcd;
+}
+.wrap .box:nth-child(13) {
+  background-color: #cdfff4;
+}
+.wrap .box:nth-child(14) {
+  background-color: #cecdff;
+}
+.wrap .box:nth-child(15) {
+  background-color: #edcdff;
+}
+.wrap .box:nth-child(16) {
+  background-color: #ffcdcd;
+}
+.wrap .box:nth-child(17) {
+  background-color: #cdf8ff;
+}
+.wrap .box:nth-child(18) {
+  background-color: #ffefcd;
+}
+.wrap .box:nth-child(19) {
+  background-color: #f5cdff;
+}
+.wrap .box:nth-child(20) {
+  background-color: #ffcdcd;
+}
