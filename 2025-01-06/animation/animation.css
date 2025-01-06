@@ -1,0 +1,27 @@
+.box {
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  /* 변경사항이 일어나는 것에 대한 속성 관리 */
+  transition: all 1s;
+}
+.box:hover {
+  background-color: yellow;
+  transform: rotate(30deg);
+}
+
+/* bigbox -100px, 100px, bg: green */
+/* 마우스 올리면 
+45도 돌아가고, 
+크기는 두배가 되고, 
+색상은 하늘색으로 변하도록 */
+.bigbox {
+  width: 100px;
+  height: 100px;
+  background-color: green;
+  transition: all 1s linear;
+}
+.bigbox:hover {
+  transform: rotate(45deg) scale(2);
+  background-color: skyblue;
+}

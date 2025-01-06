@@ -1,0 +1,52 @@
+.coffee {
+}
+.coffee ul {
+  display: flex;
+  gap: 10px;
+  margin: 100px;
+}
+.coffee ul li {
+  width: 300px;
+  background-color: #e6e6e6;
+  padding: 60px 0;
+  position: relative;
+}
+.coffee ul li img {
+  width: 100%;
+  margin-bottom: 30px;
+  transition: all 0.3s;
+}
+.coffee ul li:hover img {
+  transform: scale(1.08);
+}
+.coffee ul li p {
+  text-align: center;
+  margin-bottom: 30px;
+}
+.coffee ul li span {
+  display: block;
+  margin: 0 auto;
+  width: fit-content;
+  padding: 5px 10px;
+  background-color: navy;
+  color: #fff;
+  font-weight: 700;
+}
+
+.coffee ul li .hover {
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.7);
+  font-weight: 700;
+  font-size: 30px;
+  transition: all 0.5s;
+}
+.coffee ul li .hover p {
+  line-height: 500px;
+}
+.coffee ul li:hover .hover {
+  opacity: 1;
+}

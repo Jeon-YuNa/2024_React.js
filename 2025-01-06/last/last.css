@@ -1,0 +1,81 @@
+.container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.list {
+  display: flex;
+  gap: 30px;
+  margin-bottom: 50px;
+}
+.list li {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  background-color: #cfe4ff;
+}
+.list li:hover {
+  background-color: #cfd4ff;
+}
+.list li .icon {
+  font-size: 30px;
+}
+.list li p {
+  font-size: 14px;
+  margin-top: 15px;
+  font-weight: 700;
+}
+.list li:hover p {
+  text-decoration: underline;
+}
+
+.coffee {
+  display: flex;
+  gap: 20px;
+}
+.coffee .box {
+  width: 300px;
+}
+.coffee .box .img {
+  position: relative;
+  margin-bottom: 20px;
+}
+.coffee .box .img img {
+  width: 100%;
+}
+.coffee .box .img span {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  padding: 5px 10px;
+  border-radius: 50px;
+  color: #fff;
+  font-size: 16px;
+}
+.coffee .box .img .hot {
+  background-color: red;
+}
+.coffee .box .img .ice {
+  background-color: blue;
+}
+.coffee .box strong {
+  font-weight: 700;
+  font-size: 20px;
+}
+.coffee .box p {
+  margin-top: 20px;
+  padding-top: 10px;
+  border-top: 1px solid #a0a0a0;
+  color: #a0a0a0;
+  font-size: 14px;
+  line-height: 1.4;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 4;
+}
