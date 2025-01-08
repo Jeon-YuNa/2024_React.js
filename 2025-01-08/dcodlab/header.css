@@ -1,0 +1,44 @@
+@font-face {
+  font-family: "SDSamliphopangche_Outline";
+  src: url("https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts-20-12@1.0/SDSamliphopangche_Outline.woff")
+    format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+header {
+  width: 100vw;
+  background-color: #fff;
+}
+.wrap {
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
+}
+header .wrap {
+  display: flex;
+  height: 60px;
+  align-items: center;
+  justify-content: space-between;
+}
+header .wrap h1 {
+  font-size: 30px;
+  font-family: "SDSamliphopangche_Outline";
+}
+header .wrap nav {
+}
+header .wrap nav ul {
+  display: flex;
+}
+header .wrap nav ul li {
+  width: 180px;
+  height: 60px;
+  text-align: center;
+  line-height: 60px;
+  font-weight: 700;
+  font-size: 18px;
+}
+header .wrap nav ul li:hover {
+  background-color: #000;
+  color: #fff;
+}

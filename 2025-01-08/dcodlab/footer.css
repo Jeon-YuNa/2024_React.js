@@ -1,0 +1,28 @@
+footer {
+  color: rgba(136, 136, 136, 0.637);
+  background-color: #333;
+  padding: 120px 0;
+}
+footer .top {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  border-bottom: 2px solid rgba(136, 136, 136, 0.637);
+  padding-bottom: 20px;
+}
+footer .logo {
+  font-size: 24px;
+  font-weight: 700;
+}
+footer .menu ul {
+  display: flex;
+  justify-content: flex-end;
+  gap: 20px;
+}
+footer .menu ul li {
+  font-size: 14px;
+}
+footer p {
+  font-size: 12px;
+  margin-top: 20px;
+}

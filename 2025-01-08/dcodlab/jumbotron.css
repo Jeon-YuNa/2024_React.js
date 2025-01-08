@@ -1,0 +1,71 @@
+.jumbotron {
+  height: 85vh;
+  background-color: #000;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+}
+.jumbotron .wrap {
+  position: relative;
+  z-index: 2;
+}
+.jumbotron h2 {
+  font-size: 100px;
+  margin-bottom: 30px;
+}
+.jumbotron p {
+  color: rgba(255, 255, 255, 0.5);
+  margin-bottom: 70px;
+  line-height: 1.5;
+}
+.jumbotron button {
+  padding: 10px 160px;
+  border: 1px solid #fff;
+  background-color: transparent;
+  color: #fff;
+}
+.background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  opacity: 0.7;
+}
+.background img {
+  width: 100%;
+}
+
+.news {
+  padding: 200px 0;
+}
+.news h2 {
+  text-align: center;
+  font-size: 24px;
+  margin-bottom: 60px;
+}
+.news .issue {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+}
+.news .issue figure {
+  width: 300px;
+}
+.news .issue figure img {
+  width: 100%;
+}
+.news .issue figure figcaption {
+  margin-top: 24px;
+}
+.news .issue figure figcaption strong {
+  font-size: 16px;
+  margin-bottom: 10px;
+  display: inline-block;
+}
+.news .issue figure figcaption p {
+  font-size: 14px;
+  line-height: 1.4;
+  color: #444;
+}

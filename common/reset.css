@@ -2,6 +2,26 @@
    v2.0 | 20110126
    License: none (public domain)
 */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+strong {
+  font-weight: 700;
+}
+strong,
+span,
+em {
+  display: inline-block;
+}
+p {
+  line-height: 1.4;
+}
+img {
+  width: 100%;
+}
 
 html,
 body,
@@ -88,9 +108,10 @@ video {
   padding: 0;
   border: 0;
   font-size: 100%;
-  font: inherit;
+  font-size: 100%;
   vertical-align: baseline;
 }
+
 /* HTML5 display-role reset for older browsers */
 article,
 aside,
