@@ -1,0 +1,41 @@
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  width: 1290px;
+  margin: 0 auto;
+}
+.pizza {
+  width: 300px;
+  background-color: #e9e9e9;
+  padding-bottom: 30px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.pizza img {
+  width: 100%;
+  margin-bottom: 20px;
+}
+.pizza .name {
+  font-weight: 700;
+  font-size: 16px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+.pizza .price {
+  display: flex;
+  gap: 10px;
+  font-weight: 700;
+  font-size: 16px;
+  justify-content: center;
+}
+.pizza .price span {
+  width: 20px;
+  height: 20px;
+  background-color: gold;
+  border-radius: 50%;
+  display: inline-block;
+  text-align: center;
+  line-height: 20px;
+  margin-right: 5px;
+}

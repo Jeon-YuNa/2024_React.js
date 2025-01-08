@@ -1,0 +1,66 @@
+h2 {
+  font-size: 30px;
+  font-weight: 700;
+  margin-bottom: 30px;
+}
+.category {
+  margin-bottom: 26px;
+}
+.category span {
+  font-weight: 700;
+  display: inline-block;
+  padding: 10px 20px;
+  border-radius: 30px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  margin-right: 10px;
+}
+.category span.active {
+  background-color: #333;
+  color: #fff;
+}
+
+.books {
+}
+.books ul {
+  display: flex;
+  gap: 20px;
+}
+.books ul li {
+}
+.books ul li .box {
+  position: relative;
+  width: fit-content;
+  padding: 80px;
+  background-color: aliceblue;
+  border-radius: 20px;
+  overflow: hidden;
+}
+.books ul li .box .background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.4);
+  padding: 0 50px;
+  opacity: 0;
+  transition: all 0.4s;
+}
+.books ul li:hover .box .background {
+  opacity: 1;
+}
+.books ul li .box .background p {
+  color: #fff;
+}
+.books ul li .box img {
+  width: 160px;
+  box-shadow: rgba(149, 157, 165, 0.3) 0px 8px 24px;
+}
+.books ul li p {
+  margin-top: 20px;
+  font-weight: 700;
+  font-size: 16px;
+}

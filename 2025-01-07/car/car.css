@@ -1,0 +1,101 @@
+.best {
+  display: flex;
+  gap: 30px;
+  margin: 30px;
+}
+.best .car {
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  border-radius: 15px;
+  padding: 30px;
+}
+.best .car .title {
+  position: relative;
+  margin-bottom: 30px;
+}
+.best .car .title .name {
+  font-size: 20px;
+}
+.best .car .title .desc {
+  color: gray;
+  font-size: 14px;
+  margin-top: 30px;
+}
+.best .car .title .desc span {
+  display: inline-block;
+  margin-right: 30px;
+  position: relative;
+}
+.best .car .title .desc span::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -15px;
+  width: 1px;
+  height: 100%;
+  background-color: gray;
+}
+.best .car .title .desc span:first-child::before {
+  width: 0;
+}
+.best .car .title .top {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: fit-content;
+  padding: 5px 15px;
+  font-size: 14px;
+  color: #fff;
+  background-color: #000;
+  border-radius: 30px;
+  font-weight: 700;
+}
+.best .car img {
+  width: 390px;
+}
+.best .car .info ul li {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 25px;
+}
+.best .car .info ul li.option {
+  height: 80px;
+}
+.best .car .info ul li strong {
+  font-weight: 700;
+  font-size: 14px;
+}
+.best .car .info ul li span {
+  color: gray;
+  font-size: 14px;
+  text-align: right;
+  line-height: 1.6;
+}
+.best .car .price {
+  margin-top: 10px;
+  padding-top: 20px;
+  border-top: 1px solid lightgray;
+}
+.best .car .price p {
+  font-size: 34px;
+  text-align: right;
+}
+.best .car .price p span {
+  font-size: 14px;
+}
+.best .car .button {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 40px;
+}
+.best .car .button button {
+  border-radius: 0;
+  border: 1px solid #000;
+  padding: 10px 20px;
+  background-color: #fff;
+  font-weight: 700;
+}
+.best .car .button button.primary {
+  background-color: #000;
+  color: #fff;
+}
