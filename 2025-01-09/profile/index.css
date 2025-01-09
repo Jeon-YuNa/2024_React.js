@@ -1,0 +1,103 @@
+.container {
+  background-color: skyblue;
+  padding: 50px;
+}
+.card {
+  padding: 60px 40px 40px;
+  background-color: #fff;
+  border-radius: 10px;
+  width: fit-content;
+  margin: 50px auto;
+  position: relative;
+}
+.card__top {
+  position: absolute;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  top: 0;
+  left: 0;
+  padding: 40px 30px;
+}
+.card__top > div {
+  font-size: 24px;
+}
+.card__top .menu {
+}
+.card__top .page {
+}
+.profile {
+}
+.profile figure {
+  width: 200px;
+  border-radius: 50%;
+  margin: 0 auto 20px;
+  overflow: hidden;
+  box-shadow: 3px 10px 20px rgba(147, 215, 255, 0.5);
+}
+.profile figure img {
+  object-fit: cover;
+}
+.profile .info strong {
+  display: block;
+  font-size: 20px;
+  margin-bottom: 6px;
+  text-align: center;
+}
+.profile .info span {
+  display: block;
+  text-align: center;
+  font-size: 14px;
+  color: lightgray;
+}
+.profile .info button {
+  display: block;
+  border: 0;
+  border-radius: 50px;
+  font-size: 14px;
+  color: #fff;
+  margin: 30px auto;
+  width: 200px;
+  height: 35px;
+  background-color: skyblue;
+  box-shadow: 3px 10px 20px rgba(147, 215, 255, 0.5);
+}
+.contact ul li {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  margin-bottom: 30px;
+}
+.contact ul li span {
+  font-size: 20px;
+}
+.contact ul li p {
+  color: gray;
+  font-size: 16px;
+}
+.colors {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+.colors > div {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+}
+.colors > .blue {
+  background-color: paleturquoise;
+  box-shadow: 5px 5px 5px rgba(128, 236, 255, 0.5);
+}
+.colors > .green {
+  background-color: palegreen;
+  box-shadow: 5px 5px 5px rgba(154, 253, 192, 0.5);
+}
+.colors > .pink {
+  background-color: pink;
+  box-shadow: 5px 5px 5px rgba(255, 191, 230, 0.5);
+}
+.colors > .purple {
+  background-color: plum;
+  box-shadow: 5px 5px 5px rgba(236, 172, 255, 0.5);
+}

@@ -1,0 +1,32 @@
+.container {
+  width: 500px;
+  overflow: hidden;
+  background-color: #000;
+}
+.container ul {
+  display: flex;
+  overflow: scroll;
+  overflow-y: hidden;
+}
+/* .container ul::-webkit-scrollbar {
+  display: none;
+} */
+.container ul li {
+  padding: 10px;
+  font-size: 18px;
+  font-weight: 700;
+  border-radius: 50px;
+  border: 1px solid #fff;
+  color: #fff;
+  white-space: nowrap;
+  margin-left: 10px;
+}
+.container ul li:hover {
+  background-color: #fff;
+  color: #000;
+}
+/* .container--hide-scrollbars {
+    overflow: -moz-scrollbars-none;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+} */

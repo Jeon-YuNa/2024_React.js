@@ -1,0 +1,16 @@
+.container {
+  width: 300px;
+  height: 300px;
+  border: 1px solid #000;
+  overflow: scroll;
+}
+.box {
+  width: 500px;
+  height: 100px;
+  background-color: plum;
+  display: flex;
+}
+.box > div {
+  width: 100px;
+  border: 1px solid palegreen;
+}

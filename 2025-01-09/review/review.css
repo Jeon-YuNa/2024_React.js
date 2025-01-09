@@ -1,0 +1,126 @@
+body {
+  width: 100vw;
+  overflow-x: hidden;
+}
+.wrap {
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
+}
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: white;
+}
+header .wrap {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+header h1 {
+  font-size: 30px;
+}
+header nav ul {
+  display: flex;
+}
+header nav ul li {
+  width: 200px;
+  height: 60px;
+  font-size: 20px;
+  font-weight: 700;
+  text-align: center;
+  line-height: 60px;
+}
+header nav ul li:hover {
+  background-color: #000;
+  color: #fff;
+}
+
+.jumbotron {
+  width: 100vw;
+  height: 85vh;
+  background: url("img/background.jpg") no-repeat center / cover;
+  display: flex;
+  align-items: center;
+  color: #fff;
+}
+.jumbotron h2 {
+  font-size: 100px;
+  margin-bottom: 30px;
+}
+.jumbotron p {
+  font-size: 16px;
+  margin-bottom: 60px;
+  color: rgba(255, 255, 255, 0.5);
+}
+.jumbotron button {
+  padding: 10px 160px;
+  border: 1px solid #fff;
+  background-color: transparent;
+  font-size: 14px;
+  color: #fff;
+  font-weight: 700;
+  transition: all 0.4s;
+}
+.jumbotron button:hover {
+  background-color: #fff;
+  color: #000;
+}
+
+.content {
+  padding: 200px 0;
+}
+.content h2 {
+  font-size: 26px;
+  margin-bottom: 60px;
+  text-align: center;
+}
+.content .news {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+}
+.content .news figure {
+  width: 300px;
+}
+.content .news figure figcaption {
+  margin-top: 20px;
+}
+.content .news figure figcaption strong {
+  font-size: 16px;
+}
+.content .news figure figcaption p {
+  font-size: 14px;
+  margin-top: 10px;
+  color: #444;
+}
+
+footer {
+  width: 100vw;
+  background-color: #333;
+  padding: 120px 0;
+  color: gray;
+}
+footer .top {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  padding-bottom: 15px;
+  border-bottom: 1px solid gray;
+}
+footer .top .logo {
+  font-weight: 700;
+  font-size: 24px;
+}
+footer .top .menu ul {
+  display: flex;
+  font-size: 14px;
+  gap: 20px;
+}
+footer p {
+  font-size: 12px;
+  margin-top: 20px;
+}
