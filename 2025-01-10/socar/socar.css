@@ -1,0 +1,212 @@
+@font-face {
+  font-family: "sandol";
+  src: url("font/AppleSDGothicNeoM.ttf") format("truetype");
+}
+:root {
+  --main-color: #0bb8ff;
+  --color-white: #fff;
+}
+* {
+  font-family: "sandol";
+}
+body {
+  overflow-x: hidden;
+  width: 100vw;
+}
+.download {
+  position: fixed;
+  bottom: 0;
+  right: -5%;
+  z-index: 100;
+}
+.download p {
+  position: absolute;
+  top: 40%;
+  left: 20%;
+  transform: translateY(-50%, -50%);
+  color: var(--color-white);
+  font-weight: 700;
+  font-size: 20px;
+}
+.download .blue {
+  width: 400px;
+  height: 100px;
+  transform: skew(-30deg);
+  background-color: var(--main-color);
+  color: var(--color-white);
+  box-shadow: 1px -5px 10px rgba(0, 0, 0, 0.1);
+}
+.download span {
+  width: 50px;
+  height: 50px;
+  background-color: #fff;
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 3px 3px 20px rgba(0, 0, 0, 0.1);
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translate(-50%, -50%) skew(0deg);
+}
+header {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  padding: 20px 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: var(--color-white);
+  transition: all 0.5s;
+}
+header h1 {
+  font-size: 30px;
+}
+header nav {
+  width: 30px;
+  height: 16px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+header nav span {
+  width: 100%;
+  height: 3px;
+  background-color: var(--color-white);
+  transition: all 0.5s;
+}
+header nav span:first-child {
+  margin-left: -5px;
+}
+header nav span:last-child {
+  margin-left: 5px;
+}
+header nav:hover span:first-child {
+  margin-left: 0px;
+}
+header nav:hover span:last-child {
+  margin-left: 0px;
+}
+header.active {
+  background-color: rgba(255, 255, 255, 0.8);
+  border-bottom: 1px solid #aaa;
+  color: var(--main-color);
+}
+header.active span {
+  background-color: var(--main-color);
+}
+
+main .hero {
+  width: 100vw;
+  height: 100vh;
+  background: url("https://www.socar.kr/images/main_visual_fullscreen.jpg")
+    no-repeat center / cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+main .hero h2 {
+  text-align: center;
+  font-size: 65px;
+  color: var(--color-white);
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.8);
+  line-height: 1.4;
+}
+main .contents {
+  margin-bottom: 120px;
+}
+main .contents > div {
+  width: fit-content;
+  margin: 120px auto 0;
+}
+main .contents h2 {
+  font-size: 40px;
+  margin-bottom: 20px;
+  color: #374553;
+}
+main .contents h2 span {
+  width: 10px;
+  height: 10px;
+  background-color: var(--main-color);
+  border-radius: 50%;
+}
+main .contents p {
+  font-size: 20px;
+  color: #aaa;
+  margin-bottom: 40px;
+}
+main .contents figure {
+  width: 800px;
+}
+main .drive {
+  display: flex;
+  justify-content: center;
+  padding: 80px 0;
+  position: relative;
+  background-color: #f7f8f9;
+}
+main .drive::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: -30%;
+  width: 50%;
+  height: 100%;
+  background-color: var(--main-color);
+  transform: skew(-30deg);
+}
+main .drive p {
+  color: #aaa;
+  text-align: center;
+  font-size: 30px;
+}
+main .drive p strong {
+  color: var(--main-color);
+}
+
+footer {
+  width: 100vw;
+  padding: 40px 0 120px;
+  background-color: #28323c;
+  color: #646f7c;
+}
+footer .wrap {
+  max-width: 980px;
+  margin: 0 auto;
+}
+footer .sns {
+  display: flex;
+  gap: 15px;
+  font-size: 25px;
+  margin-bottom: 20px;
+}
+footer ul {
+  margin-bottom: 10px;
+}
+footer ul li {
+  display: inline-block;
+  font-size: 15px;
+  color: #c5c8ce;
+  margin-right: 20px;
+  margin-bottom: 10px;
+}
+footer ul li.white {
+  color: var(--color-white);
+}
+footer .info {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 20px;
+  font-size: 13px;
+}
+footer .info p {
+  line-height: 1.5;
+}
+footer .info p em {
+  font-style: normal;
+  color: var(--color-white);
+  text-decoration: underline;
+}

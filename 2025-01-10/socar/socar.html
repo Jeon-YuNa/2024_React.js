@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+    <link rel="stylesheet" href="../../common/reset.css" />
+    <link rel="stylesheet" href="socar.css" />
+  </head>
+  <body>
+    <div class="download">
+        <div class="blue"></div>
+        <p>쏘카 앱 다운로드 ↓</p>
+        <span><img src="https://www.socar.kr/images/i-appicon.svg" alt=""></span>
+    </div>
+    <header>
+      <h1>SOCAR</h1>
+      <nav>
+        <span></span>
+        <span></span>
+      </nav>
+    </header>
+    <main>
+      <section class="hero">
+        <h2>차가 필요한 <br />모든 순간, 쏘카</h2>
+      </section>
+      <section class="contents">
+        <div>
+          <h2>24시간 언제나 <span></span></h2>
+          <p>
+            한밤중이나 주말에도 스마트폰으로<br />시간에 구애받지 않고
+            <br />쏘카와 함께 이동하세요.
+          </p>
+          <figure>
+            <img src="https://www.socar.kr/images/usp_a.jpg" alt="" />
+          </figure>
+        </div>
+        <div>
+            <h2>원하는 곳에서 <span></span></h2>
+            <p>
+              내 주변 3분 거리 쏘카존에서<br> 혹은 내가 있는 곳으로 쏘카를 불러<br> 어디서나 편하게 출발하세요<div class=""></div>
+            </p>
+            <figure>
+              <img src="https://www.socar.kr/images/usp_b.jpg" alt="" />
+            </figure>
+          </div>
+        <div>
+            <h2>필요한 시간만큼 <span></span></h2>
+            <p>
+              간단한 장보기부터 주말여행까지 <br>10분 단위로 원하는 만큼만 이용하세요.
+            </p>
+            <figure>
+              <img src="https://www.socar.kr/images/usp_c.jpg" alt="" />
+            </figure>
+          </div>
+          <div>
+            <h2>다양한 차종을 <span></span></h2>
+            <p>
+                연인과의 드라이브부터 가족 캠핑까지 <br>상항에 맞게 50여 종의 차량을<br>선택해서 이용하세요.
+            </p>
+            <figure>
+              <img src="https://www.socar.kr/images/usp_d.jpg" alt="" />
+            </figure>
+          </div>
+      </section>
+      <section class="drive">
+        <p><strong>10,479,173</strong>명의 회원이 쏘카와 <br>
+        함께 하고 있습니다.<br>
+    지금 바로 <strong>쏘카 드라이브</strong>를 <br>시작하세요.</p>
+      </section>
+    </main>
+    <footer>
+        <div class="wrap">
+            <div class="sns">
+                <div class="insta"><i class="fa-brands fa-instagram"></i></div>
+                <div class="facebook"><i class="fa-brands fa-facebook"></i></div>
+                <div class="youtube"><i class="fa-sharp fa-solid fa-circle-play"></i></div>
+            </div>
+            <ul>
+                <li>회사소개</li>
+                <li>인재채용</li>
+                <li>이용약관</li>
+                <li class="white">개인정보처리방침</li>
+                <li class="white">위치정보 이용약관</li>
+                <li class="white">차량손해면책제도</li>
+                <li>고객센터</li>
+                <li>제휴 문의</li>
+            </ul>
+            <div class="info">
+                <div class="contact">
+                    <p>주소. 제주특별자치도 제주시 연미길 <strong>42</strong> (오라삼동)</p>
+                    <p>전화. <strong>1661-3315</strong></p>
+                    <p>팩스. <strong>02-6969-9333</strong></p>
+                </div>
+                <div class="info__inner">
+                    <p>(주)쏘카 통신판매업 <em>사업자정보 확인</em></p>
+                    <p>신고: 제 <strong>2019</strong>-제주오라-<strong>3</strong>호, 사업자등록번호: <strong>616-81-90529</strong>,  대표자: 박재욱</p>
+                    <p>ⓒ <strong>2025 SOCAR All rights reserved.</strong></p>
+                </div>
+            </div>
+        </div>
+    </footer>
+  </body>
+</html>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script>
+$(window).on('scroll', function(){
+    if (window.scrollY > 50) {
+        $('header').addClass('active');
+    } else {
+        $('header').removeClass('active');
+    }
+  
+});
+$("body").on("mousewheel", function (e) {
+  const wheel = e.originalEvent.wheelDelta;
+
+  if (wheel > 0) {
+    //스크롤 올릴때
+    $('header').css('transform','translateY(0%)');
+  } else {
+    //스크롤 내릴때
+    $('header').css('transform','translateY(-100%)');
+  }
+});
+</script>
