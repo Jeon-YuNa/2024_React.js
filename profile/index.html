@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="../common/reset.css" />
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <header>
+      <div class="topbar">
+        <div class="dots">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="title">JeonYuNa.profile.co.kr</div>
+      </div>
+    </header>
+
+    <nav>
+      <ul>
+        <li>
+          <button name="about">
+            <span>⋆｡‧˚ʚ🍒ɞ˚‧｡⋆</span> About me <span>⋆｡‧˚ʚ🍒ɞ˚‧｡⋆</span>
+          </button>
+        </li>
+        <li><button>▀▄▀▄▀▄Work▀▄▀▄▀▄</button></li>
+        <li><button>₊˚˖𓍢ִ🍓✧˚favorite.🎀༘⋆ﾟ＊</button></li>
+        <li><button>🕊️⃝💕 Contact💕⃝🕊️</button></li>
+      </ul>
+    </nav>
+    <main>
+      <section id="background"></section>
+      <section id="about">
+        <div class="topbar">
+          <div class="dots">
+            <span class="close">x</span>
+            <span></span>
+            <span></span>
+          </div>
+          <div class="title">JeonYuNa.profile.co.kr/about</div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script>
+  $("section span.close").click(function () {
+    $(this).parent().parent().parent("section").css("transform", "scale(0)");
+  });
+
+  $("nav ul li button").click(function () {
+    const idName = $(this).attr("name");
+    console.log("#" + idName);
+    $("#" + idName).css("transform", "scale(1)");
+  });
+</script>

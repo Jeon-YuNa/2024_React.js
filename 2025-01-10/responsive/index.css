@@ -1,0 +1,48 @@
+.box {
+  width: 500px;
+  height: 500px;
+  background-color: pink;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  height: 80px;
+  border-bottom: 1px solid #000;
+}
+header nav ul {
+  display: flex;
+  gap: 30px;
+}
+header nav ul li {
+  list-style: none;
+}
+.hamberger {
+  display: none;
+}
+
+@media screen and (max-width: 800px) {
+  .box {
+    background-color: skyblue;
+  }
+
+  header nav {
+    display: none;
+  }
+  .hamburger {
+    display: block;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .hamburger span {
+    width: 100%;
+    height: 4px;
+    border-radius: 10px;
+    background-color: #000;
+  }
+}
