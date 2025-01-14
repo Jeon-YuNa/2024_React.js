@@ -112,7 +112,7 @@ section .topbar .title {
   width: 100%;
   padding: 5px 30px;
 }
-section {
+section.active {
   transform: scale(0);
 }
 
@@ -133,10 +133,10 @@ section {
   border-radius: 5px;
   border: 1px solid #ccc;
   width: fit-content;
-  max-height: 60vh;
+  /* max-height: 60vh; */
 }
 #work {
-  top: 30%;
+  top: 10%;
   left: 25%;
 }
 #favorite {
@@ -149,249 +149,111 @@ section {
 }
 
 #about {
-  background-color: rgb(188, 226, 231);
+  background-color: rgb(211, 236, 240);
 }
-#about .card {
-  background-color: #fff;
-  border-radius: 10px;
-  padding: 40px;
-  width: fit-content;
-  margin: 40px auto;
-}
-#about .card .img {
-  width: 150px;
-  height: 150px;
-  margin-bottom: 40px;
-  border-radius: 50%;
-  overflow: hidden;
-}
-#about .card ul li {
-  margin-bottom: 20px;
-  text-align: center;
-}
-#about .card ul li strong {
-  font-size: 16px;
-}
-#about .card ul li p {
-  margin-top: 10px;
-  font-size: 14px;
-}
-
-#work ul {
-  margin: 10px;
-  padding: 20px;
-  border-radius: 10px;
-}
-#work ul li {
-  background-color: #eee;
+#about .profile {
+  margin: 20px;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   border: 1px solid #aaa;
   border-radius: 10px;
-  height: 50px;
-  line-height: 50px;
-  padding-left: 20px;
+  background-color: #fff;
+}
+#about .profile figure {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  overflow: hidden;
   margin-bottom: 10px;
 }
-#work ul li:hover {
-  background-color: #ddd;
-  text-decoration: underline;
+#about .profile > p {
+  font-size: 14px;
+  color: #aaa;
 }
-
-#favorite .tit {
-  font-weight: 700;
-  padding-left: 20px;
-  margin-top: 30px;
+#about .profile > p strong {
+  font-size: 20px;
+  color: #333;
 }
-#favorite .wrap {
-  margin: 0 auto;
+#about .profile ul {
+  width: 100%;
+  margin-top: 20px;
+}
+#about .profile ul li {
   display: flex;
-  padding: 20px;
-}
-#favorite .wrap .box {
-  width: 170px;
-  height: 170px;
-  margin-right: 20px;
-  border-radius: 10px;
-  overflow: hidden;
-}
-#favorite .wrap ul li {
-  width: 300px;
-  margin-bottom: 15px;
-  border-radius: 10px;
-  padding: 15px;
-  background-color: pink;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 10px;
   white-space: nowrap;
 }
-#favorite .wrap ul li:last-child {
-  margin-bottom: 0;
+#about .profile ul li strong {
+  font-size: 16px;
 }
-
-#favorite .wrap.jpop .box {
-  background: url("img/pretender.jpg") no-repeat center / cover;
-}
-#favorite .wrap.animation .box {
-  background: url("img/dandadan.jpg") no-repeat center / cover;
-}
-
-#contact {
-  background-color: palegoldenrod;
-}
-#contact ul {
-  padding: 50px 60px;
-  display: flex;
-  justify-content: center;
-  gap: 30px;
-}
-#contact ul li {
-  font-size: 30px;
+#about .profile ul li span {
+  display: block;
+  width: 70%;
   padding: 20px;
-  background-color: #fff;
+  border-radius: 10px;
+  background-color: #efefef;
+  border: 1px solid #aaa;
+}
+
+/* work */
+#work {
+  background-color: darkslategray;
+}
+#work .portfolio {
+  padding: 0 50px 40px;
+}
+#work .portfolio h3 {
+  padding-left: 20px;
+  position: relative;
+  font-size: 15px;
+  margin-bottom: 15px;
+  margin-top: 40px;
+  color: #fff;
+}
+#work .portfolio h3::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  width: 8px;
+  height: 8px;
   border-radius: 50%;
-  transition: all 0.5s 0.1s;
+  background-color: #fff;
 }
-#contact ul li:hover {
-  box-shadow: 5px 5px 15px rgba(187, 181, 119, 0.7);
+#work .portfolio .box {
+  width: 400px;
+  height: 100px;
+  border-radius: 10px;
+  overflow: hidden;
+  border: 1px solid #ccc;
 }
-
-@media screen and (max-width: 1020px) {
-  header {
-    padding: 10px 30px;
-  }
-  .topbar .dots {
-    position: static;
-    transform: translateY(0);
-  }
-  .topbar .dots > span {
-    width: 15px;
-    height: 15px;
-    margin-right: 10px;
-  }
-  .topbar .title {
-    width: 80%;
-    padding: 5px 0;
-    border-radius: 5px;
-  }
-
-  nav {
-    width: 100%;
-    padding: 10px 20px;
-    border-radius: 0;
-    background-color: #eee;
-  }
-  nav ul li button span {
-    display: none;
-  }
-
-  #about,
-  #work,
-  #favorite,
-  #contact {
-    position: absolute;
-    border-radius: 5px;
-    width: 80vw;
-    height: calc(80vh - 50px);
-    max-height: fit-content;
-    left: 10% !important;
-    top: 20% !important;
-  }
-
-  #contact ul {
-    padding: 4.9vw 5.8vw;
-  }
+#work .portfolio .box img {
+  transition: transform 2.5s, filter 0.4s;
+}
+#work .portfolio .box:hover img {
+  transform: translateY(-10%);
 }
 
-@media screen and (max-width: 540px) {
-  header {
-    padding: 1.85vw 5.5vw;
-  }
-  .topbar .dots > span {
-    width: 2.7vw;
-    height: 2.7vw;
-    margin-right: 1.85vw;
-  }
-  nav ul {
-    flex-direction: column;
-    align-items: center;
-  }
-  nav ul li button {
-    width: 90vw;
-  }
-
-  section .topbar {
-    padding: 1.85vw 9.25vw 1.85vw 5.5vw;
-  }
-  section .topbar .dots span {
-    width: 4vw;
-    height: 4vw;
-    font-size: 2.8vw;
-    line-height: 3vw;
-    margin-right: 2.7vw;
-  }
-  section .topbar .title {
-    padding: 1.85vw 5.5vw;
-    font-size: 3vw;
-  }
-  #about,
-  #work,
-  #favorite,
-  #contact {
-    position: absolute;
-    border-radius: 5px;
-    width: 100vw;
-    height: calc(90vh - 50px);
-    max-height: fit-content;
-    left: 0% !important;
-    top: 10% !important;
-  }
-
-  #work ul {
-    margin: 1.85vw;
-    padding: 3.7vw;
-  }
-  #work ul li {
-    border-radius: 1.85vw;
-    height: 9.2vw;
-    line-height: 9.2vw;
-    padding-left: 3.7vw;
-    margin-bottom: 1.85vw;
-  }
-
-  #favorite .tit {
-    padding-left: 3.7vw;
-    margin-top: 5.5vw;
-  }
-  #favorite .wrap {
-    padding: 3.7vw;
-    display: block;
-  }
-  #favorite .wrap .box {
-    width: 100%;
-    height: 30vw;
-    margin-right: 0vw;
-    margin-bottom: 3.7vw;
-    border-radius: 5px;
-  }
-  #favorite .wrap ul li {
-    width: 100%;
-    margin-bottom: 2.77vw;
-    border-radius: 5px;
-    padding: 2.77vw;
-    font-size: 3.2vw;
-  }
-
-  #contact ul {
-    padding: 6.2vw 20vw;
-    gap: 10vw;
-    flex-wrap: wrap;
-  }
-  #contact ul li {
-    width: fit-content;
-    font-size: 10vw;
-    padding: 3.7vw;
-    background-color: #fff;
-    border-radius: 50%;
-    transition: all 0.5s 0.1s;
-  }
-  #contact ul li:hover {
-    box-shadow: 5px 5px 10px rgba(187, 181, 119, 0.7);
-  }
+#favorite {
+  background-color: plum;
+}
+#favorite .grid {
+  padding: 50px;
+  padding-right: 30px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+#favorite .grid > div {
+  width: 100px;
+  height: 100px;
+  border-radius: 10px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+  overflow: hidden;
+  background-color: palevioletred;
 }

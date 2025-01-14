@@ -49,7 +49,7 @@
     </nav>
     <main>
       <div id="background"></div>
-      <section id="about">
+      <section id="about" class="active">
         <div class="topbar">
           <div class="dots">
             <span class="close">x</span>
@@ -58,21 +58,19 @@
           </div>
           <div class="title">JeonYuNa.profile.co.kr/about</div>
         </div>
-        <div class="card">
-          <div class="img"><img src="img/img.jpg" alt="" /></div>
+
+        <div class="profile">
+          <figure><img src="img/img.jpg" alt="" /></figure>
+          <p><strong>Jeon YuNa</strong></p>
+          <p>Developer</p>
+
           <ul>
-            <li>
-              <strong>name</strong>
-              <p>전유나</p>
-            </li>
-            <li>
-              <strong>birth date</strong>
-              <p>1999.01.01</p>
-            </li>
+            <li><strong>birth date : </strong> <span>1999.01.01</span></li>
+            <li><strong>MBTI : </strong> <span>INFP</span></li>
           </ul>
         </div>
       </section>
-      <section id="work">
+      <section id="work" class="active">
         <div class="topbar">
           <div class="dots">
             <span class="close">x</span>
@@ -81,30 +79,23 @@
           </div>
           <div class="title">JeonYuNa.profile.co.kr/work</div>
         </div>
-        <ul>
-          <li>
-            <a target="_blank" href="http://binaryzerone.com/"
-              >http://binaryzerone.com</a
-            >
-          </li>
-          <li>
-            <a target="_blank" href="http://binaryzerone.com/"
-              >http://binaryzerone.com</a
-            >
-          </li>
-          <li>
-            <a target="_blank" href="http://binaryzerone.com/"
-              >http://binaryzerone.com</a
-            >
-          </li>
-          <li>
-            <a target="_blank" href="http://binaryzerone.com/"
-              >http://binaryzerone.com</a
-            >
-          </li>
-        </ul>
+
+        <div class="portfolio">
+          <h3>Binary Zerone</h3>
+          <a target="_blank" href="https://binaryzerone.com/">
+            <div class="box"><img src="img/portfolio-1.png" alt="" /></div>
+          </a>
+          <h3>TD Company</h3>
+          <a target="_blank" href="http://tdcompany.co.kr/">
+            <div class="box"><img src="img/portfolio-2.png" alt="" /></div>
+          </a>
+          <h3>Boram Dental</h3>
+          <a target="_blank" href="http://boramident.co.kr/">
+            <div class="box"><img src="img/portfolio-3.png" alt="" /></div>
+          </a>
+        </div>
       </section>
-      <section id="favorite">
+      <section id="favorite" class="active">
         <div class="topbar">
           <div class="dots">
             <span class="close">x</span>
@@ -113,54 +104,19 @@
           </div>
           <div class="title">JeonYuNa.profile.co.kr/favorite</div>
         </div>
-
-        <div class="tit">J-POP</div>
-        <div class="wrap jpop">
-          <div class="box"></div>
-          <ul>
-            <li>
-              <a href="https://www.youtube.com/watch?v=mEZqJ65ra08">
-                OST : YOASOBI - 아이돌(アイドル)
-              </a>
-            </li>
-            <li>
-              <a href="https://www.youtube.com/watch?v=TQ8WlA2GXbk">
-                Official髭男dism - Pretender
-              </a>
-            </li>
-            <li>
-              <a
-                href="https://www.youtube.com/watch?v=ElvWGBM9r4o&list=PLQYgSFH92RpTuXQ4tcZdXQndrhFPvZMJu&index=2"
-              >
-                [너의 이름은 ost] 꿈의 등불(夢灯籠)
-              </a>
-            </li>
-          </ul>
-        </div>
-
-        <div class="tit">Animation</div>
-        <div class="wrap animation">
-          <div class="box"></div>
-          <ul>
-            <li>
-              <a href="https://www.animaxtv.co.kr/content/179"> 헌터X헌터 </a>
-            </li>
-            <li>
-              <a
-                href="https://series.naver.com/comic/detail.series?productNo=3933103"
-              >
-                귀멸의 칼날
-              </a>
-            </li>
-            <li>
-              <a href="https://namu.wiki/w/%EB%8B%A8%EB%8B%A4%EB%8B%A8">
-                단다단
-              </a>
-            </li>
-          </ul>
+        <div class="grid">
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
         </div>
       </section>
-      <section id="contact">
+      <section id="contact" class="active">
         <div class="topbar">
           <div class="dots">
             <span class="close">x</span>
@@ -169,28 +125,6 @@
           </div>
           <div class="title">JeonYuNa.profile.co.kr/contact</div>
         </div>
-        <ul>
-          <li>
-            <a href=""
-              ><span><i class="fa-solid fa-phone"></i></span
-            ></a>
-          </li>
-          <li>
-            <a href=""
-              ><span><i class="fa-brands fa-square-instagram"></i></span
-            ></a>
-          </li>
-          <li>
-            <a href=""
-              ><span><i class="fa-solid fa-envelope"></i></span
-            ></a>
-          </li>
-          <li>
-            <a href=""
-              ><span><i class="fa-brands fa-github"></i></span
-            ></a>
-          </li>
-        </ul>
       </section>
     </main>
   </body>
@@ -199,11 +133,14 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 <script>
   $("section span.close").click(function () {
-    $(this).parent().parent().parent("section").css("transform", "scale(0)");
+    $(this).parent().parent().parent("section").addClass("active");
+    // $(this).parent().parent().parent("section").css("transform", "scale(0)");
   });
 
   $("nav ul li button").click(function () {
     const idName = $(this).attr("name");
-    $("#" + idName).css("transform", "scale(1)");
+
+    $("#" + idName).toggleClass("active");
+    // $("#" + idName).css("transform", "scale(1)");
   });
 </script>
